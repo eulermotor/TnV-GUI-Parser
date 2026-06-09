@@ -1,0 +1,274 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Pegasus Marvel Laptop Stark Xavier Chimera
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ NewSignal_0005 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0022 : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2047 PegasusCanTpFlowControl: 8 Pegasus
+ SG_ FlowControl : 0|8@1+ (1,0) [0|255] ""  Xavier
+
+BO_ 2046 PegasusCanTpUpgrade: 8 Xavier
+ SG_ CanTPTransmission : 0|64@1+ (1,0) [0|1.8446744074E+19] ""  Pegasus
+
+BO_ 511 MarvelCanTpUpgradeFlowControl: 8 Marvel
+ SG_ FlowControl : 0|8@1+ (1,0) [0|255] ""  Xavier
+
+BO_ 510 MarvelCanTpUpgrade: 8 Xavier
+ SG_ CanTPTransmission : 0|64@1+ (1,0) [0|1.8446744074E+19] ""  Marvel
+
+BO_ 1791 StarkCanTpUpgradeFlowControl: 8 Stark
+ SG_ FlowControl : 0|8@1+ (1,0) [0|255] ""  Xavier
+
+BO_ 1281 CanTpCertTxFlowControl: 8 Xavier
+ SG_ FlowControl : 0|8@1+ (1,0) [0|255] ""  Laptop
+
+BO_ 1280 CanTpCertTx: 8 Laptop
+ SG_ CanTPTransmission : 0|64@1+ (1,0) [0|1.8446744074E+19] ""  Xavier
+
+BO_ 1366 CanTpOTAFlowControl: 8 Xavier
+ SG_ FlowControl : 0|8@1+ (1,0) [0|255] ""  Laptop
+
+BO_ 1365 CanTpOTA: 8 Laptop
+ SG_ CanTPTransmission : 0|64@1+ (1,0) [0|1.8446744074E+19] ""  Xavier
+
+BO_ 1790 StarkCanTpUpgrade: 8 Xavier
+ SG_ CanTPTransmission : 0|64@1+ (1,0) [0|1.8446744074E+19] ""  Stark
+
+BO_ 1538 VehicleState: 8 Stark
+ SG_ VehicleState : 48|8@1+ (1,0) [0|0] ""  Xavier
+
+BO_ 1030 SetTime: 8 Laptop
+ SG_ Day : 48|8@1+ (1,0) [0|255] ""  Xavier
+ SG_ Year : 40|8@1+ (1,0) [0|255] ""  Xavier
+ SG_ Month : 32|8@1+ (1,0) [0|255] ""  Xavier
+ SG_ Date : 24|8@1+ (1,0) [0|255] ""  Xavier
+ SG_ Second : 16|8@1+ (1,0) [0|255] ""  Xavier
+ SG_ Minute : 8|8@1+ (1,0) [0|255] ""  Xavier
+ SG_ Hour : 0|8@1+ (1,0) [0|255] ""  Xavier
+
+BO_ 1026 OdoAndTripDisplay: 8 Stark
+ SG_ Trip : 32|32@1+ (0.1,0) [0|0] ""  Xavier
+ SG_ ODO : 0|32@1- (0.1,0) [0|0] ""  Xavier
+
+BO_ 1025 DisplayID1: 8 Stark
+ SG_ PackCurrent : 48|16@1+ (0.1,0) [0|0] ""  Xavier
+ SG_ TTFC : 32|16@1+ (1,0) [0|0] ""  Xavier
+ SG_ DTE : 16|16@1+ (0.1,0) [0|0] ""  Xavier
+ SG_ SOC : 8|8@1+ (1,0) [0|100] ""  Xavier
+ SG_ VehicleSpeed : 0|8@1+ (1,0) [0|0] ""  Xavier
+
+BO_ 1024 TellTails: 8 Stark
+ SG_ WakeUpScreen : 56|8@1+ (1,0) [0|0] ""  Xavier
+ SG_ SymbolBlinkByte6 : 48|8@1+ (1,0) [0|0] ""  Xavier
+ SG_ SymbolBlinkByte5 : 40|8@1+ (1,0) [0|0] ""  Xavier
+ SG_ SymbolBlinkByte4 : 32|8@1+ (1,0) [0|0] ""  Xavier
+ SG_ LedBlinkByte3 : 24|8@1+ (1,0) [0|0] ""  Xavier
+ SG_ LedBlinkByte2 : 16|8@1+ (1,0) [0|0] ""  Xavier
+ SG_ LedBlinkByte1 : 8|8@1+ (1,0) [0|0] ""  Xavier
+ SG_ LedBlinkByte0 : 0|8@1+ (1,0) [0|0] ""  Xavier
+
+BO_ 1028 ResetTrip: 8 Xavier
+ SG_ ResetTrip : 0|16@1+ (1,0) [0|0] ""  Stark
+
+BO_ 1329 ServerDataFlowControl: 8 Stark
+ SG_ FlowControl : 0|8@1+ (1,0) [0|255] ""  Xavier
+
+BO_ 1328 ServerDataToStark: 8 Xavier
+ SG_ CanTPTransmission : 0|64@1+ (1,0) [0|1.8446744074E+19] ""  Stark
+
+BO_ 1313 StarkServerDataFlowControl: 8 Xavier
+ SG_ FlowControl : 0|8@1+ (1,0) [0|255] ""  Stark
+
+BO_ 1312 StarkServerResponse: 8 Stark
+ SG_ CanTPTransmission : 0|64@1+ (1,0) [0|1.8446744074E+19] ""  Xavier
+
+BO_ 1297 StarkDataFlowControl: 8 Xavier
+ SG_ FlowControl : 0|8@1+ (1,0) [0|255] ""  Stark
+
+BO_ 1296 StarkData: 8 Stark
+ SG_ CanTPTransmission : 0|64@1+ (1,0) [0|1.8446744074E+19] ""  Xavier
+
+BO_ 1031 GetDeviceInfo: 8 Laptop
+ SG_ DeviceInfoCmd : 0|8@1+ (1,0) [0|255] ""  Xavier
+
+BO_ 1969 GetGITSHA: 8 Xavier
+ SG_ GITSHA : 15|32@0+ (1,0) [0|4294967295] ""  Laptop
+ SG_ XavierDeviceID : 0|8@1+ (1,0) [0|255] ""  Laptop
+
+BO_ 1954 HwVersionInfo: 8 Xavier
+ SG_ HwPatchVersion : 24|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ HwMinorVersion : 16|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ HwMajorVersion : 8|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ XavierDeviceID : 0|8@1+ (1,0) [0|255] ""  Stark,Laptop
+
+BO_ 1953 SwVersionInfo: 8 Xavier
+ SG_ CurrentApp : 56|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ ConfigVersion : 40|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ BuildType : 32|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ SwPatchVersion : 24|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ SwMinorVersion : 16|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ SwMajorVersion : 8|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ XavierDeviceID : 0|8@1+ (1,0) [0|255] ""  Laptop,Stark
+
+BO_ 1778 ReadUniqueID5to11Bytes: 8 Xavier
+ SG_ UniqueIDByte5to11 : 15|56@0+ (1,0) [0|281474976710000] ""  Laptop
+ SG_ XavierDeviceID : 0|8@1+ (1,0) [0|255] ""  Laptop
+
+BO_ 1777 ReadUniqueID1to4Bytes: 8 Xavier
+ SG_ XavierDeviceID : 0|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ UniqueIDByte1to4 : 39|32@0+ (1,0) [0|4294967295] ""  Laptop
+
+BO_ 1776 StartupDeviceInfo: 8 Xavier
+ SG_ UniqueIDByte0 : 56|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ SwPatchVersion : 48|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ SwMinorVersion : 40|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ SwMajorVersion : 32|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ HwPatchVersion : 24|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ HwMinorVersion : 16|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ HwMajorVersion : 8|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ XavierDeviceID : 0|8@1+ (1,0) [0|255] ""  Laptop
+
+BO_ 1029 CurrentTime: 8 Xavier
+ SG_ Day : 48|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ Year : 40|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ Month : 32|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ Date : 24|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ Second : 16|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ Minute : 8|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ Hour : 0|8@1+ (1,0) [0|255] ""  Laptop,Stark
+
+BO_ 1786 OtaComms: 8 Xavier
+ SG_ OtaCommsApp : 40|8@1+ (1,0) [0|255] ""  Xavier
+ SG_ TargetECUid : 32|8@1+ (1,0) [0|255] ""  Laptop,Marvel,Pegasus,Stark,Xavier
+ SG_ DataType : 24|8@1+ (1,0) [0|255] ""  Laptop,Marvel,Pegasus,Stark,Xavier
+ SG_ CommandType : 16|8@1+ (1,0) [0|255] ""  Laptop,Marvel,Pegasus,Stark,Xavier
+ SG_ DestinationECUid : 8|8@1+ (1,0) [0|255] ""  Laptop,Marvel,Pegasus,Stark,Xavier
+ SG_ SourceECUid : 0|8@1+ (1,0) [0|255] ""  Laptop,Marvel,Pegasus,Stark,Xavier
+
+BO_ 1271 GetSimNumberLast4Digit: 8 Xavier
+ SG_ SimLast4Digit : 7|32@0+ (1,0) [0|4294967295] ""  Laptop
+
+BO_ 1270 GetSimNumber16Digit: 8 Xavier
+ SG_ SimFirst16Digit : 7|64@0+ (1,0) [0|1.8446744074E+19] ""  Laptop
+
+BO_ 1779 GetIMEI: 8 Xavier
+ SG_ IMEI : 7|64@0+ (1,0) [0|1.8446744074E+19] ""  Laptop
+
+BO_ 1104 Network_information: 8 Xavier
+ SG_ SimRegState : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CertificateState : 48|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ ErrorState : 40|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ SystemState : 32|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ OTAstate : 24|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ MqttPublishValue : 16|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ HttpState : 8|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ NetworkState : 0|8@1+ (1,0) [0|0] ""  Laptop
+
+BO_ 1033 BleCmds: 8 Xavier
+ SG_ BleSourceId : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BleDestinationId : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BleCmdType : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BleCmdData : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1034 PublishCountInfo: 8 Xavier
+ SG_ PublishedCount : 7|64@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1035 PublishInfo: 8 Xavier
+ SG_ vehicleMsgCount : 7|32@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ serverMsgCount : 39|32@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1036 FailPublishInfo: 8 Xavier
+ SG_ lengthFailCount : 7|32@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1037 ErrorInfo: 8 Xavier
+ SG_ ErrorDetected : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ noRespError : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mqttClosedError : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mqttDisconnected : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ resetQuectal : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ weakSignalError : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mqttOccupiedError : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ activateIpError : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ urcError : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mqttIPCheck : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ simError : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ uartError : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1038 TxShutDownRoutine: 8 Xavier
+ SG_ ShutDownData : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1298 StarkEventCantpData: 8 Stark
+ SG_ EventData : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1299 StarkEventFlowControl: 8 Xavier
+ SG_ FlowControlData : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1543 RhinoMode: 8 Stark
+ SG_ RhinoFlag : 4|4@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1787 OtaStatus: 8 Stark
+ SG_ otaState : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ otaEcuId : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1269 CanDbInfo: 8 Xavier
+ SG_ CanDBVersion : 7|24@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1272 GetMacId: 8 Xavier
+ SG_ MacId : 7|56@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2149324048 RxShutDownRountine: 8 Stark
+ SG_ ShutDownReq : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 416 MarvelCanTpData: 8 Marvel
+ SG_ MarvelData : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 992 ChimeraCanTpData: 8 Chimera
+ SG_ ChimeraData : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1023 ChimeraCanTpUpgrade: 8 Chimera
+ SG_ Chimeraupgrade : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+

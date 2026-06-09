@@ -1,0 +1,274 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Pegasus Marvel Laptop Stark Xavier stark ULT ECC STR DCDC
+
+
+
+
+BO_ 1029 CurrentTime: 8 Xavier
+ SG_ day : 48|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ year : 40|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ month : 32|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ date : 24|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ second : 16|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ minute : 8|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ hour : 0|8@1+ (1,0) [0|255] ""  Laptop,Stark
+
+BO_ 2349377520 controller_3: 8 Vector__XXX
+ SG_ controller_mcu_can_life : 60|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ controller_vehicle_status : 56|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ controller_mcu_work_status : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DC_current : 32|16@1+ (0.1,-3200) [0|0] "A" Vector__XXX
+ SG_ RPM : 16|16@1+ (1,-32000) [0|0] "rpm" Vector__XXX
+ SG_ TORQUE : 0|16@1+ (0.1,-3200) [0|0] "Nm" Vector__XXX
+
+BO_ 2349443056 controller_4: 8 Vector__XXX
+ SG_ motor_temperature : 56|8@1+ (1,-40) [0|0] "  C" Vector__XXX
+ SG_ controller_temperature : 48|8@1+ (1,-40) [0|0] "  C" Vector__XXX
+ SG_ AC_effective_current : 32|16@1+ (0.1,-3200) [0|0] "A" Vector__XXX
+ SG_ AC_voltage : 16|16@1+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ Voltage : 0|16@1+ (0.1,0) [0|0] "V" Vector__XXX
+
+BO_ 2349508592 controller_5: 8 Vector__XXX
+ SG_ controller_error_count : 56|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ controller_brake_status : 62|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1808 controller_6: 8 Vector__XXX
+ SG_ throttle_percentage : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ throttle_voltage : 24|8@1+ (0.1,0) [0|10] "V" Vector__XXX
+
+BO_ 1025 DisplayID1: 8 Stark
+ SG_ PackCurrent : 48|16@1+ (0.1,0) [0|0] ""  Xavier
+ SG_ TTFC : 32|16@1+ (1,0) [0|0] ""  Xavier
+ SG_ DTE : 16|16@1+ (0.1,0) [0|0] ""  Xavier
+ SG_ SOC : 8|8@1+ (1,0) [0|100] ""  Xavier
+ SG_ VehicleSpeed : 0|8@1+ (1,0) [0|0] ""  Xavier
+
+BO_ 1026 OdoAndTripDisplay: 8 Stark
+ SG_ Trip : 32|32@1+ (0.1,0) [0|0] ""  Xavier
+ SG_ ODO : 0|32@1- (0.1,0) [0|0] ""  Xavier
+
+BO_ 265 bms_2: 8 Marvel
+ SG_ Pack_voltage : 48|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
+ SG_ SOH : 16|16@1+ (0.01,0) [0|655.35] "%" Vector__XXX
+ SG_ battery_state_of_charge : 0|16@1+ (0.01,0) [0|655.35] "%" Vector__XXX
+ SG_ battery_fully_charge_flag : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ battery_bms_state : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 584 ECC: 8 ECC
+ SG_ ECC_speed_of_compressor : 0|16@1+ (1,0) [0|65534] "rpm"  ECC
+ SG_ ECC_compressor_input_power : 16|8@1+ (0.1,0) [0|25.4] "kW"  ECC
+ SG_ ECC_compressor_status : 24|8@1+ (1,0) [0|3] ""  ECC
+ SG_ ECC_compressor_error : 32|8@1+ (1,0) [0|254] ""  ECC
+ SG_ ECC_compressor_controller_temperature : 40|8@1+ (1,-40) [-40|214] "C"  ECC
+ SG_ ECC_compressor_input_current : 48|8@1+ (0.1,0) [0|25.4] "A"  ECC
+ SG_ ECC_compressor_input_voltage : 56|8@1+ (4,0) [0|1060] "V"  ECC
+
+BO_ 2147485697 STR: 8 STR
+ SG_ Steering_angle : 16|16@1+ (1,0) [0|65534] ""  STR
+
+BO_ 2550255759 DCDC: 8 DCDC
+ SG_ DCDC_VOLTAGE : 7|16@0+ (0.1,0) [0|6553.4] "V"  DCDC
+ SG_ DCDC_CURRENT : 23|16@0+ (0.1,0) [0|6553.4] "A"  DCDC
+ SG_ DCDC_TEMP : 63|8@0+ (1,-40) [0|254] "C"  DCDC
+
+BO_ 1184 ULT: 8 ULT
+ SG_ ULT_ultrasonic_1 : 8|8@1+ (1,0) [0|254] "cm"  ULT
+ SG_ ULT_ultrasonic_2 : 16|8@1+ (1,0) [0|254] "cm"  ULT
+ SG_ ULT_ultrasonic_3 : 32|8@1+ (1,0) [0|254] "cm"  ULT
+
+BO_ 1538 VehicleState: 8 Stark
+ SG_ VehicleState : 48|8@1+ (1,0) [0|0] ""  Xavier
+
+BO_ 272 bms_3: 8 Vector__XXX
+ SG_ Pack_current : 32|32@1- (1E-05,0) [-21474836.48|21474836.47] "A" Vector__XXX
+ SG_ battery_precharge_active : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ battery_balancing_active : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ battery_balancing_limit : 0|16@1+ (0.1,0) [0|65535] "mV" Vector__XXX
+
+BO_ 274 bms_4: 8 Vector__XXX
+ SG_ battery_bms_temperature_6 : 40|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_bms_temperature_5 : 32|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_bms_temperature_4 : 24|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_bms_temperature_3 : 16|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_bms_temperature_2 : 8|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_bms_temperature_1 : 0|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Pack_capacity : 48|16@1- (0.1,0) [0|6553.5] "Ah" Vector__XXX
+
+BO_ 298 bms_18: 8 Vector__XXX
+ SG_ battery_bms_version : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ DCLO : 16|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+ SG_ DCLI : 0|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+ SG_ battery_bms_config_id : 48|8@1- (1,0) [-128|127] "" Vector__XXX
+
+BO_ 2566869221 Onboard_charger: 8 Vector__XXX
+ SG_ OBC_charger_ac_current : 63|8@0+ (0.1,0) [0|255] "" Vector__XXX
+ SG_ OBC_charger_ac_voltage : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ OBC_charger_temperature : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ OBC_charger_status : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ OBC_charger_output_current : 23|16@0+ (0.1,0) [0|255] "" Vector__XXX
+ SG_ OBC_charger_output_voltage : 7|16@0+ (0.1,0) [0|255] "" Vector__XXX
+
+BO_ 1829 controller_1: 2 Vector__XXX
+ SG_ Brake_voltage : 8|8@1+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ Brake_percentage : 0|8@1+ (1,0) [0|0] "%" Vector__XXX
+
+BO_ 263 bms_0: 8 Marvel
+ SG_ battery_bms_requested_voltage : 7|16@0+ (0.1,0) [0|65535] "V" Vector__XXX
+ SG_ battery_bms_requested_current : 23|16@0+ (0.1,0) [0|6553.5] "" Vector__XXX
+
+BO_ 336 BalancingMask: 8 Vector__XXX
+ SG_ BalancingMask0 : 0|64@1+ (1,0) [0|1.8446744074E+19] "" Vector__XXX
+
+BO_ 337 BalancingMask1: 8 Vector__XXX
+ SG_ BalancingMask1 : 0|64@1+ (1,0) [0|1.8446744074E+19] "" Vector__XXX
+
+BO_ 342 BC_Dynamic_inst: 8 Vector__XXX
+ SG_ dynamicLimitOut_Inst : 16|16@1+ (0.1,0) [0|0] "A" Vector__XXX
+ SG_ dynamicLimitIn_Inst : 0|16@1+ (0.1,0) [0|0] "" Vector__XXX
+
+BO_ 299 BF_CCM_CMU_Counter: 8 Vector__XXX
+ SG_ cycleCount : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mcu_counter : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 264 DG_Public_Charger: 8 Vector__XXX
+ SG_ MaxAllowed_Current : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxAllowed_CT : 32|16@1+ (1,0) [0|0] "mV" Vector__XXX
+ SG_ MaxAllowed_PV : 16|16@1+ (1,0) [0|0] "mV" Vector__XXX
+ SG_ MaxAllowed_CV : 0|16@1+ (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 300 DG_voltageData: 8 Vector__XXX
+ SG_ Contactor_Command : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DG_Voltage_Delta : 32|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ DG_Voltage_Min : 16|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ DG_Voltage_Max : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+
+BO_ 297 IMD_MESSAGES: 8 Vector__XXX
+ SG_ Isolation_Warning_Counter : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Isolation_Measurement_Active : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VBatFET_OFF : 32|16@1- (0.01,0) [-327.68|327.67] "V" Vector__XXX
+ SG_ VBatFET_ON : 16|16@1- (0.01,0) [-327.68|327.67] "V" Vector__XXX
+ SG_ Riso : 0|16@1+ (0.01,0) [0|655.35] "M ohm" Vector__XXX
+
+BO_ 302 IR_PARAM_1: 8 Vector__XXX
+ SG_ IR_Value : 0|32@1+ (10000,0) [0|0] "" Vector__XXX
+
+BO_ 303 MANIFEST_INFO_ID: 8 Vector__XXX
+ SG_ manifestMissing : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BMSmanifestPatch : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BMSmanifestMinor : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BMSmanifestMajor : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 334 NTC_Delta: 8 Vector__XXX
+ SG_ AuxVoltage : 48|16@1+ (0.1,0) [0|655.35] "V" Vector__XXX
+ SG_ Int_Temp_Delta : 40|8@1- (1,0) [-128|127] "degC" Vector__XXX
+ SG_ Int_Temp_Min : 32|8@1- (1,0) [-128|127] "degC" Vector__XXX
+ SG_ Int_Temp_Max : 24|8@1- (1,0) [-128|127] "degC" Vector__XXX
+ SG_ Ext_Temp_Delta : 16|8@1- (1,0) [-128|127] "degC" Vector__XXX
+ SG_ Ext_Temp_Min : 8|8@1- (1,0) [-128|127] "degC" Vector__XXX
+ SG_ Ext_Temp_Max : 0|8@1- (1,0) [-128|127] "degC" Vector__XXX
+
+BO_ 1954 HwVersionInfo: 8 Xavier
+ SG_ hw_version_patch : 24|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ hw_version_minor : 16|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ hw_version_major : 8|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ ecu_id : 0|8@1+ (1,0) [0|255] ""  Stark,Laptop
+ SG_ SCD_Flag : 56|8@1+ (1,0) [0|0] ""  Stark,Laptop
+
+BO_ 262 Shutdown_ack_flag: 1 Vector__XXX
+ SG_ BMS_SD_ack_flag : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1953 SwVersionInfo: 8 Xavier
+ SG_ current_app : 56|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ config_patch : 40|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ build_type : 32|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ sw_version_patch : 24|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ sw_version_minor : 16|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ sw_version_major : 8|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ ecu_id : 0|8@1+ (1,0) [0|255] ""  Laptop,Stark
+
+BO_ 1830 controller_2: 8 Vector__XXX
+ SG_ controller_config_version : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ controller_serial_number : 8|24@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ controller_os_version : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 600 bms_258: 8 Vector__XXX
+ SG_ battery_active_errors_count : 39|16@0+ (1,0) [0|65535] "Value" Vector__XXX
+
+BO_ 601 bms_259: 8 Vector__XXX
+ SG_ battery_bms_errors_since_boot : 39|32@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1542 id606: 8 Vector__XXX
+ SG_ vehicle_aux_charing_flag : 7|8@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ vehicle_aux_battery_voltage : 15|16@0+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 1559 id617: 8 Vector__XXX
+ SG_ controller_error : 7|64@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1547 id60B: 8 Vector__XXX
+ SG_ brake_light : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+
+CM_ BO_ 1029 "1
+
+";
+CM_ BO_ 2349377520 "2";
+CM_ SG_ 2349377520 controller_vehicle_status "MCU  ǰ  λ";
+CM_ BO_ 2349443056 "3";
+CM_ SG_ 2349443056 motor_temperature "    ¶ ";
+CM_ SG_ 2349443056 controller_temperature "          ¶ ";
+CM_ SG_ 2349443056 AC_effective_current "      Чֵ";
+CM_ SG_ 2349443056 AC_voltage "MCU      ѹ";
+
+CM_ BO_ 2349508592 "4";
+CM_ BO_ 1808 "5
+";
+CM_ BO_ 265 "8";
+CM_ BO_ 2566869221 "17";
+CM_ BO_ 1954 "33";
+CM_ BO_ 1953 "31";
+CM_ BO_ 298 "16
+";
+CM_ BO_ 274 "15";
+CM_ BO_ 272 "14
+";
+CM_ BO_ 263 "19";
+CM_ BO_ 1830 "34";
+CM_ SG_ 1830 controller_config_version "   ð汾";
+CM_ BO_ 1829 "18";
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+VAL_ 2349377520 controller_vehicle_status 4 "H" 3 "E" 2 "R" 1 "S" 0 "N" ;
+

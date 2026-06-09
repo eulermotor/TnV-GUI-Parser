@@ -1,0 +1,9 @@
+3W
+	V1 --> CBMS   | NMC | GTAKE
+	V2 --> ION    | NMC | GTAKE
+	V3 --> MARVEL | LFP | GTAKE
+	V4 --> CBMS   | LFP | GTAKE
+4W
+	V7 --> MARVEL | HEPU
+	V8 --> NBMS   | HEPU
+	V9 --> NBMS   | HEPU + ONE 1750's ID

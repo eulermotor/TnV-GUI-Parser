@@ -1,0 +1,387 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Pegasus Marvel Laptop Stark Xavier stark
+
+
+VAL_TABLE_ MCU_current_gear 4 "Power" 3 "Eco" 2 "Reverse" 1 "Sports" 0 "Neutral" ;
+VAL_TABLE_ Pwm_off_on 1 "On" 0 "Off" ;
+VAL_TABLE_ Drive_Mode 1 "Speed" 0 "Torque" ;
+VAL_TABLE_ Ready_Status 1 "Ready" 0 "Not Ready" ;
+VAL_TABLE_ Fault 1 "Fault" 0 "No fault" ;
+VAL_TABLE_ Brake_enable 1 "Drive" 0 "brake" ;
+VAL_TABLE_ Motor_direction 1 "Motor fwd" 0 "Motor reverse" ;
+VAL_TABLE_ Active_discharge_0n_off 1 "active discharge on" 0 "active discharge off" ;
+VAL_TABLE_ Halt_start 1 "Start" 0 "Halt" ;
+VAL_TABLE_ Fault_grade 3 "Grade 3 fault" 2 "Grade 2 fault" 1 "Grade 1 fault" 0 "No fault" ;
+VAL_TABLE_ MultiMode_Operation 0 "Sports Mode" ;
+VAL_TABLE_ Alarm 7 "Speed_limit" 6 "Temp Low" 5 "Under Voltage" 4 "Over Voltage" 3 "Motor Over Heat" 2 "Motor Over Load" 1 "Motor Over Speed" 0 "Encoder_fault" ;
+VAL_TABLE_ Vehicle_Status_1 4 "Power on" 3 "Low Voltage Light" 2 "Regnartion_active" 1 "Spr1" 0 "Spr" ;
+VAL_TABLE_ Vehicle_status 2 "REV" 1 "FWD" 0 "Park" ;
+
+
+
+BO_ 2566869221 Onboard_charger: 8 Vector__XXX
+ SG_ charger_ac_current : 63|8@0+ (0.1,0) [0|255] "" Vector__XXX
+ SG_ charger_ac_voltage : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ charger_temperature : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ charger_status : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ charger_output_current : 23|16@0+ (0.1,0) [0|255] "" Vector__XXX
+ SG_ charger_output_voltage : 7|16@0+ (0.1,0) [0|255] "" Vector__XXX
+
+BO_ 2550588916 Stark_charger: 8 Vector__XXX
+ SG_ charger_requested_current : 23|16@0+ (0.1,0) [0|255] "" Vector__XXX
+ SG_ charger_requested_voltage : 7|16@0+ (0.1,0) [0|255] "" Vector__XXX
+
+BO_ 1538 id602: 8 stark
+ SG_ vehicle_display_soc : 7|16@0+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ controller_speed : 39|16@0+ (0.1,0) [0|65535] "" Vector__XXX
+ SG_ charger_is_gun_connected : 48|1@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ charger_type : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ vehicle_state : 63|8@0+ (1,0) [0|10] "" Vector__XXX
+
+BO_ 1539 id603: 8 stark
+ SG_ vehicle_calculated_odo : 23|32@0+ (0.01,0) [0|429496729.5] "Km" Vector__XXX
+
+BO_ 1542 id606: 8 Vector__XXX
+ SG_ vehicle_aux_charing_flag : 7|8@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ vehicle_aux_battery_voltage : 15|16@0+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 1541 id605: 8 Vector__XXX
+ SG_ vehicle_stark_ticks : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ telemetry_start_index : 39|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 1545 id609: 8 Vector__XXX
+ SG_ vehicle_igni_debounce_count : 39|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ vehicle_igni_cycle_count : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 1546 id60A: 8 Vector__XXX
+ SG_ derived_param_cycle_count : 39|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ battery_max_voltage : 23|16@0+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ battery_min_voltage : 7|16@0+ (0.1,0) [0|6553.5] "" Vector__XXX
+
+BO_ 1547 id60B: 8 Vector__XXX
+ SG_ vcu_onboard_temperature : 39|16@0+ (0.1,0) [0|6553.5] "C" Vector__XXX
+ SG_ vcu_c3_box_temperature : 55|16@0+ (0.1,0) [0|6553.5] "C" Vector__XXX
+ SG_ vcu_ambient_temperature : 23|16@0+ (0.1,0) [0|6553.5] "C" Vector__XXX
+ SG_ vehicle_gpio_peripheral : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1548 id60C: 8 Vector__XXX
+ SG_ vcu_uid1 : 7|64@0+ (1,0) [0|1.8446744074e+19] "" Vector__XXX
+
+BO_ 1549 id60D: 8 Vector__XXX
+ SG_ vcu_uid2 : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 1550 id60E: 8 Vector__XXX
+ SG_ arc_reactor_status : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ charger_is_charging : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ charger_safe_charging_flag : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ charger_disable_flag : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ vehicle_sleep_flag : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ derived_param_wh_km : 39|16@0+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ vehicle_time_to_sleep : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ controller_data_type : 55|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ battery_bms_data_type : 54|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1552 id610: 8 Vector__XXX
+ SG_ vehicle_ecu_manifest_crc : 39|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ vehicle_manifest_crc : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 1553 id611: 8 Vector__XXX
+ SG_ vcu_accel_roll : 55|16@0- (0.01,0) [-32768|32767] "" Vector__XXX
+ SG_ vcu_gyro_z : 39|16@0- (0.01,0) [-32768|32767] "" Vector__XXX
+ SG_ vcu_gyro_y : 23|16@0- (0.01,0) [-32768|32767] "" Vector__XXX
+ SG_ vcu_gyro_x : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1554 id612: 8 Vector__XXX
+ SG_ vcu_accel_pitch : 55|16@0- (0.01,0) [-32768|32767] "" Vector__XXX
+ SG_ vcu_accel_z : 39|16@0- (0.01,0) [-32768|32767] "" Vector__XXX
+ SG_ vcu_accel_y : 23|16@0- (0.01,0) [-32768|32767] "" Vector__XXX
+ SG_ vcu_accel_x : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1555 id613: 8 Vector__XXX
+ SG_ vcu_mag_z : 39|16@0- (0.1,0) [-32768|32767] "" Vector__XXX
+ SG_ vcu_mag_y : 23|16@0- (0.1,0) [-32768|32767] "" Vector__XXX
+ SG_ vcu_mag_x : 7|16@0- (0.1,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1556 id614: 8 Vector__XXX
+ SG_ vcu_angle_z : 39|16@0- (0.1,0) [-32768|32767] "" Vector__XXX
+ SG_ vcu_angle_y : 23|16@0- (0.1,0) [-32768|32767] "" Vector__XXX
+ SG_ vcu_angle_x : 7|16@0- (0.1,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1557 id615: 8 Vector__XXX
+ SG_ error_1 : 7|32@0+ (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 1558 id616: 8 Vector__XXX
+ SG_ error_2 : 7|32@0+ (1,0) [-32768|32767] "" Vector__XXX
+ SG_ unknown_error_1 : 39|16@0+ (1,0) [-32768|32767] "" Vector__XXX
+ SG_ unknown_error_2 : 55|16@0+ (1,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1559 id617: 8 Vector__XXX
+ SG_ controller_error : 7|32@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 263 bms_1: 8 Vector__XXX
+ SG_ battery_bms_requested_current : 23|16@0+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ battery_bms_requested_voltage : 7|16@0+ (0.1,0) [0|6553.5] "" Vector__XXX
+
+BO_ 298 BB_Dynamic_Limits: 7 Vector__XXX
+ SG_ battery_bms_dynamic_in_limit : 0|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+ SG_ battery_bms_dynamic_out_limit : 16|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+ SG_ battery_bms_config_id : 48|8@1- (1,0) [-128|127] "" Vector__XXX
+ SG_ battery_bms_version : 32|16@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 279 bms_9: 8 Vector__XXX
+ SG_ battery_c_2_v_5 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_2_v_6 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_2_v_7 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_2_v_8 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 280 bms_10: 8 Vector__XXX
+ SG_ battery_c_2_v_9 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_2_v_10 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_2_v_11 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_2_v_12 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 278 bms_8: 8 Vector__XXX
+ SG_ battery_c_2_v_1 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_2_v_2 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_2_v_3 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_2_v_4 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 277 bms_7: 8 Vector__XXX
+ SG_ battery_c_1_v_9 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_1_v_10 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_1_v_11 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_1_v_12 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 276 bms_6: 8 Vector__XXX
+ SG_ battery_c_1_v_5 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_1_v_6 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_1_v_7 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_1_v_8 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 275 bms_5: 8 Vector__XXX
+ SG_ battery_c_1_v_1 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_1_v_2 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_1_v_3 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ battery_c_1_v_4 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 274 bms_4: 8 Vector__XXX
+ SG_ battery_bms_temperature_1 : 0|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_bms_temperature_2 : 8|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_bms_temperature_3 : 16|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_bms_temperature_4 : 24|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_bms_temperature_5 : 32|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_bms_temperature_6 : 40|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ battery_remaining_battery_capacity : 48|16@1- (0.01,0) [0|3276.7] "Ah" Vector__XXX
+
+BO_ 272 bms_3: 8 Vector__XXX
+ SG_ battery_precharge_active : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ battery_balancing_active : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ battery_current : 32|32@1- (1e-05,0) [-1000|1000] "A" Vector__XXX
+ SG_ battery_balancing_limit : 0|16@1+ (0.1,0) [0|4200] "mV" Vector__XXX
+
+BO_ 265 bms_2: 8 Vector__XXX
+ SG_ battery_state_of_charge : 0|16@1+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ battery_state_of_health : 16|16@1+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ battery_total_voltage : 48|16@1+ (0.1,0) [60|85] "V" Vector__XXX
+ SG_ battery_fully_charge_flag : 40|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ battery_bms_state : 32|8@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 600 bms_12: 2 Vector__XXX
+ SG_ battery_active_errors_count : 0|16@1+ (1,0) [0|65535] "Value" Vector__XXX
+
+BO_ 601 bms_13: 8 Vector__XXX
+ SG_ battery_bms_errors_since_boot : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 284 bms_11C: 8 Vector__XXX
+ SG_ battery_bms_max_capacity : 0|16@1+ (0.1,0) [0|6553.5] "Ah" Vector__XXX
+ SG_ battery_cmu_2_balancing_mask : 48|16@1- (1,0) [0|65535] "" Vector__XXX
+ SG_ battery_cmu_1_balancing_mask : 32|16@1- (1,0) [0|65535] "" Vector__XXX
+
+BO_ 302 battery_internal_resistance: 8 Vector__XXX
+ SG_ bms_internalResistance : 0|32@1- (10000,0) [-2.147483648e+13|2.147483647e+13] "" Vector__XXX
+
+BO_ 299 bms_cycle_count: 8 Vector__XXX
+ SG_ bms_cycleCount : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ bms_mcuCounter : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1026 display_3: 8 Stark
+ SG_ vehicle_calculated_trip : 32|32@1+ (0.1,0) [0|0] ""  Xavier
+
+BO_ 1025 display_2: 8 Stark
+ SG_ vehicle_ttfc : 32|16@1+ (1,0) [0|0] ""  Xavier
+ SG_ vehicle_range : 16|16@1+ (0.1,0) [0|0] ""  Xavier
+
+BO_ 1024 display_1: 8 Stark
+ SG_ vehicle_immob_state : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ vehicle_thermal_runaway_flag : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ vehicle_digital_lock_state : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1969 GetGITSHA: 8 Xavier
+ SG_ git_shaw : 16|32@1+ (1,0) [0|4294967295] ""  Laptop
+ SG_ device_id : 0|8@1+ (1,0) [0|255] ""  Laptop
+
+BO_ 1029 CurrentTime: 8 Xavier
+ SG_ day : 48|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ year : 40|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ month : 32|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ date : 24|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ second : 16|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ minute : 8|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ hour : 0|8@1+ (1,0) [0|255] ""  Laptop,Stark
+
+BO_ 1783 sim_number_16_20: 8 Xavier
+ SG_ sim_16_20 : 0|32@1+ (1,0) [0|4294967295] ""  Laptop
+
+BO_ 1782 sim_number_0_16: 8 Xavier
+ SG_ sim_0_16 : 0|64@1+ (1,0) [0|9.2233720369e+18] ""  Laptop
+
+BO_ 1779 xavier_1: 8 Xavier
+ SG_ imei : 0|64@1+ (1,0) [0|9.2233720369e+18] ""  Laptop
+
+BO_ 1104 Network_information: 8 Xavier
+ SG_ CertificateState : 48|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ ErrorState : 40|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ SystemState : 32|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ OTAstate : 24|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ MqttPublishValue : 16|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ HttpState : 8|8@1+ (1,0) [0|255] ""  Laptop
+ SG_ NetworkState : 0|8@1+ (1,0) [0|0] ""  Laptop
+
+BO_ 1830 controller_10: 8 Vector__XXX
+ SG_ controller_os_version : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_vcl_build_number : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_vcl_version : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_serial_number : 8|24@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_config_version : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ controller_os_build_number : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1829 controller_9: 8 Vector__XXX
+ SG_ Baud_Rate_Change : 56|8@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ Regen_Off : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Brake_Current_Limit : 40|8@1+ (1,0) [5|100] "Percent" Vector__XXX
+ SG_ Regen_Current_Limit : 32|8@1+ (1,0) [5|100] "Percent" Vector__XXX
+ SG_ Drive_Current_Limit : 24|8@1+ (1,0) [10|100] "Percent" Vector__XXX
+ SG_ Brake_Rate : 16|8@1+ (0.1,0) [1|250] "Sec" Vector__XXX
+ SG_ Accel_Release_Rate : 8|8@1- (0.1,0) [1|250] "Sec" Vector__XXX
+ SG_ Accel_Rate : 0|8@1+ (0.1,0) [1|250] "Sec" Vector__XXX
+
+BO_ 1828 controller_8: 6 Vector__XXX
+ SG_ Invalid_BMS_Data : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_vehicle_power_mode : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_battery_energy_consumed : 24|8@1+ (0.1,0) [0|25.5] "KWhr" Vector__XXX
+ SG_ controller_battery_power_consumed : 16|8@1+ (0.1,0) [0|25.5] "KW" Vector__XXX
+ SG_ controller_motor_torque_estimated : 0|16@1- (0.1,0) [-100|100] "Nm" Vector__XXX
+
+BO_ 1815 controller_7: 3 Vector__XXX
+ SG_ controller_main_state : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ controller_frequency : 0|16@1- (1,0) [-500|500] "Hz" Vector__XXX
+
+BO_ 1814 controller_6: 8 Vector__XXX
+ SG_ controller_current_rms : 48|16@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ controller_voltage_rms : 40|8@1+ (1,0) [0|255] "Amp" Vector__XXX
+ SG_ controller_master_timer : 8|32@1- (1,0) [-2147483648|2147483647] "" Vector__XXX
+
+BO_ 1813 controller_5: 8 Vector__XXX
+ SG_ controller_motor_rpm : 48|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ controller_battery_keyswitch_voltage : 40|8@1+ (1,0) [0|255] "Volt" Vector__XXX
+ SG_ controller_battery_capacity_voltage : 32|8@1+ (1,0) [0|255] "Volt" Vector__XXX
+
+BO_ 1808 controller_4: 8 Vector__XXX
+ SG_ controller_potential_to_row : 48|8@1+ (0.1,0) [0|25.5] "V" Vector__XXX
+ SG_ controller_brake_mapped : 40|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ controller_brake_command : 32|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ controller_throttle_potentiometer : 24|8@1+ (0.1,0) [0|25.5] "V" Vector__XXX
+ SG_ controller_throttle_mapped : 16|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ controller_throttle_multiplier : 8|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ controller_throttle_command : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+
+BO_ 1798 controller_2: 8 Vector__XXX
+ SG_ controller_trip_low_high : 32|16@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ controller_alarm_fault : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_assist_level_gear : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_vehicle_status : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1797 controller_1: 8 Vector__XXX
+ SG_ controller_odometer : 32|32@1+ (0.1,0) [0|429496729.5] "KM" Vector__XXX
+ SG_ controller_battery_discharge_rate : 24|8@1- (1,0) [-128|127] "" Vector__XXX
+ SG_ controller_soc : 16|8@1- (1,0) [-128|127] "" Vector__XXX
+ SG_ controller_temperature : 8|8@1+ (1,-50) [-50|200] "degree_C" Vector__XXX
+ SG_ controller_motor_temperature : 0|8@1+ (1,-50) [-50|200] "Degree_C" Vector__XXX
+
+BO_ 1800 controller_12: 8 Vector__XXX
+ SG_ controller_fault_flag_0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_fault_flag_1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_fault_flag_2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_fault_flag_3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_fault_flag_4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_fault_flag_5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_fault_flag_6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ controller_fault_flag_7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1954 HwVersionInfo: 8 Xavier
+ SG_ hw_version_patch : 24|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ hw_version_minor : 16|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ hw_version_major : 8|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ ecu_id : 0|8@1+ (1,0) [0|255] ""  Stark,Laptop
+
+BO_ 1953 SwVersionInfo: 8 Xavier
+ SG_ current_app : 56|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ config_patch : 40|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ build_type : 32|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ sw_version_patch : 24|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ sw_version_minor : 16|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ sw_version_major : 8|8@1+ (1,0) [0|255] ""  Laptop,Stark
+ SG_ ecu_id : 0|8@1+ (1,0) [0|255] ""  Laptop,Stark
+
+BO_ 1955 CfgVersionInfo: 8 Vector__XXX
+ SG_ ecu_id : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ cfg_version_major : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ cfg_version_minor : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ config_patch : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1560 id618: 8 Vector__XXX
+ SG_ spi_hal_status : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ spi_state : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ spi_error_flag : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ can_tx_error_count : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ can_rx_error_count : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ can_esr_flags : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ can_general_errors : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+
+
+
