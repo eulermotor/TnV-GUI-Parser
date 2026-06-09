@@ -9,13 +9,16 @@ Welcome to the internal Vehicle Data Parser and Summary Tool repository. This ap
 Before running the application, ensure you meet the following access requirements:
 
 * **Authentication:** You **must** use your official company email ID to log in and use the application.
-* **Google Sheets Integration:** * Before uploading summary data, click the **Connect** button located in the top-right corner to verify your permissions.
+* **Google Sheets Integration (Optional - Only required if you are working on TnV vehicles and want to upload summary):**
+    * Before uploading summary data, click the **Connect** button located in the top-right corner to verify your permissions.
     * Navigating back to the *Home* page or *Vehicle Type* page will reset this connection, requiring you to reconnect.
+    * **3W SpreadSheet:** [Click here to view](https://docs.google.com/spreadsheets/d/1TiTbPuTobJOnAO3HbH15xKbTO--J9yP-WsawDKNM0q4/edit?usp=sharing)
+    * **4W SpreadSheet:** [Click here to view](https://docs.google.com/spreadsheets/d/1L6W5pay9hMtc22DRUZa4-1KNsMNEjhmd48XSKd4CPQ8/edit?usp=sharing)
 * **Access Permissions:** If you encounter connection issues or lack upload permissions, please contact **vinayak.kushwah@eulermotors.com** for authorization.
 
 ---
 
-## 🛠 Supported Vehicles & DBC Configurations
+## 🛠 Supported Vehicles & DBC Configurations for heatmap, summary and summary table
 
 The heatmap and summary table generation features currently support a specific subset of vehicle configurations. 
 
@@ -38,7 +41,7 @@ To prevent parsing errors or data corruption, please strictly adhere to the foll
 
 ### 2. Multi-Part TRC Files
 If your log data spans across multiple TRC files, you must rename them sequentially using the word **"part"** (case-insensitive) followed immediately by the sequence number.
-* *Correct Examples:* `data_part1.trc`, `LOG_PART2.trc`, `trip_part10.trc`
+* *Correct Examples:* `data part 1.trc`, `LOG PART 2.trc`, `trip part 10.trc`
 
 ### 3. Directory Cleanliness
 Before starting a new parsing sequence, verify that your target folder does **not** contain:
